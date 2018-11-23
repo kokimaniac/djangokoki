@@ -5,7 +5,7 @@
         <title>Django koki</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet" type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet" type="text/css">
         <!--<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
@@ -13,8 +13,10 @@
         <div class="page-header">
           {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Blog de {{ user.first_name }}</a></h1>
+          {% else %}
+            <h1><a href="/">Blog Django Koki</a></h1>
           {% endif %}
-          <h1><a href="/">Django Koki</a></h1>
         </div>
         <div class="content container">
             <div class="row">
