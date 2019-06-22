@@ -1,0 +1,23 @@
+{% extends 'errors/base.html' %}
+
+{% block head_content %}
+    <title>500</title>
+{% endblock %}
+{% block content %}
+    <div class="col align-self-center">
+        <div class="card text-white bg-warning mb-3">
+            <div class="card-header">Error Status</div>
+            <div class="card-body">
+                <h5 class="card-title display-2">
+                    404 status
+                </h5>
+                <p class="card-text">
+                    Oops... Probably this is our fault!
+                    <h3 class="display-5">
+                        {{ request.scheme }}://{{ request.META.HTTP_HOST }}{{ request.path }}
+                    </h3>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

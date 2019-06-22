@@ -25,7 +25,8 @@ SECRET_KEY = 'qm$r_tm8#k7hzavjv0o^yc_$vm%6+^$0o21)r1_c%7qa7n_cqt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'cokimaniac.pythonanywhere.com']
+#ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'cokimaniac.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'cokimaniac.pythonanywhere.com', 'stackpath.bootstrapcdn.com']
 
 
 # Application definition
