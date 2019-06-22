@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
+#utilities
+import hashlib
+
+result = hashlib.md5('cokimaniac'.encode()).hexdigest()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    path(result, views.resume, name="resume")
 ]

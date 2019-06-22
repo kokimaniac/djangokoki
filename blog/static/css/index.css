@@ -1,0 +1,18 @@
+* {
+    font-size: 14px;
+}
+#dev-web .list-group-item-light,
+#infr .list-group-item-light,
+#os-others .list-group-item-light{
+    font-size: 13px;
+}
+#dev-web,
+#infr,
+#os-others {
+    font-size: 14px;
+}
+
+.display-6 {
+    font-size: 40px;
+    color: rgb(180, 177, 177);
+}

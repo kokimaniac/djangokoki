@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <!--styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="styles/index.css">-->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!--/-->
+</head>
+<body>
+    <div class="container pt-3">
+        <div class="row pb-3">
+            <div class="col-lg-8 align-self-center">
+                <h3 class="display-3">Jorge Luis Cameo</h3>
+                <div class="display-6">desarrolador web</div>
+            </div>
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item">2-2306465 / +591 77540250</li>
+                    <li class="list-group-item">Jorge Luis Cameo Rojas</li>
+                    <a href="mailto:cokimaniac@gmail.com"><li class="list-group-item">cokimaniac@gmail.com</li></a>
+                    <a href="https://github.com/kokimaniac"><li class="list-group-item">https://github.com/kokimaniac</li></a>
+                    <a href="https://cokimaniac.pythonanywhere.com"><li class="list-group-item">https://cokimaniac.pythonanywhere.com</li></a>
+                    <li class="list-group-item">C. 21 de Enero Z. Pura-Pura No. 24</li>
+                </ul>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page">
+                    <h3 class="display-5">Resúmen</h3>
+                </li>
+            </ol>
+        </nav>
+        <div class="row pb-3">
+            <div class="col">
+                <p id="resume" class="list-group-item">
+                    Estudiante universitario autodidacta, curioso, dinámico y versátil. <br>
+                    Aunque laboralmente me destaqué más en el área de infraestrctura, más especifico
+                    en el departamento de soporte y estaciones de trabajo siempre se me hizo
+                    más natural la programación y por ende el desarrollo de software. <br>
+                </p>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page">
+                    <h3 class="display-5">Experiencia</h3>
+                </li>
+            </ol>
+        </nav>
+        <div class="row pb-3">
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        2012-2015 - Técnico Informático - Transglobal SRL
+                    </li>
+                    <li class="list-group-item">
+                        2015-2016 - Pasanta en Soporte y estaciones de Trabajo de Infraestructura - La Bolivia CiaCruz
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page">
+                    <h3 class="display-5">Habilidades</h3>
+                </li>
+            </ol>
+        </nav>
+        <div class="row pb-3">
+            <div class="col">
+                <ul class="list-group list-group-horizontal-sm" id="dev-web">
+                    <li class="list-group-item flex-fill list-group-item-light">Desarrollo frontend</li>
+                    <li class="list-group-item flex-fill ">HTML5/CSS3</li>
+                    <li class="list-group-item flex-fill">Javascript</li>
+                    <li class="list-group-item flex-fill">jQuery/Ajax</li>
+                    <li class="list-group-item flex-fill">Bootstrap4</li>
+                    <li class="list-group-item flex-fill">React JS</li>
+                    <li class="list-group-item flex-fill">Vue JS</li>
+                    <li class="list-group-item flex-fill list-group-item-light">Desarrollo backend</li>
+                    <li class="list-group-item flex-fill">Django Framework</li>
+                    <li class="list-group-item flex-fill">PHP</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-sm" id="infr">
+                    <li class="list-group-item flex-fill list-group-item-light">Infraestructura</li>
+                    <li class="list-group-item flex-fill">Configuración de servidores Linux</li>
+                    <li class="list-group-item flex-fill">Configuración de cisco IOS switches y routers</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-sm" id="os-others">
+                    <li class="list-group-item flex-fill list-group-item-light">Sistemas operativos y otras tecnologías</li>
+                    <li class="list-group-item flex-fill">GNU Linux (debian, ubuntu, fedora, centOS)</li>
+                    <li class="list-group-item flex-fill">Microsoft Windows</li>
+                    <li class="list-group-item flex-fill">Virtualizations (vmWare and VirtualBox)</li>
+                    <li class="list-group-item flex-fill">Docker container</li>
+                    <li class="list-group-item flex-fill">git Version COntrol System</li>
+                </ul>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page">
+                    <h3 class="display-5">Educación</h3>
+                </li>
+            </ol>
+        </nav>
+        <div class="row pb-3">
+            <div class="col">
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item flex-fill list-group-item-light" id="college">Estudios Universitarios</li>
+                    <li class="list-group-item flex-fill">2019 - Universidad Salesiana de Bolivia - Ingeniería de Sistemas / Estudiante de 8vo Semestre</li>
+                    <li class="list-group-item flex-fill list-group-item-light" id="school">Estudios Escolares</li>
+                    <li class="list-group-item flex-fill">2008 - Bachiller en Humanidades / Colegio San Antonio de Padua</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item flex-fill list-group-item-light" id="institute">Otros estudios</li>
+                    <li class="list-group-item flex-fill">2014 - ICEI srl - Administración de Servidores en Linix (4 Módulos)</li>
+                    <li class="list-group-item flex-fill">2018 - Tekhne srl - Cisco CCNA (CCNA1, CCNA2)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--js scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--/-->
+</body>
+</html>
